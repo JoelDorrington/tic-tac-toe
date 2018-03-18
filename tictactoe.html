@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+	<script type="text/javascript" src="ToDoList/assets/js/lib/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="header">
+<h1 id="title">Tic Tac Toe</h1>
+<p>First Move: <span id="moveCount">1</span>  <button id="switch" style='display: none;'>Switch</button></p>
+</div>
+<div id="container">
+	<div id="p1">
+		<div id="player1score">
+			<span id='p1namedisplay'>Player 1</span>
+			<br>
+			<input type='text' id='p1name'><button id="p1namebutton">Change name</button>
+			<p id="score1">0</p>
+		</div>
+		<select id="select1">
+			<option value="Xs.png" selected="selected">X</option>
+			<option value="Os.png">O</option>
+			<option value="Puppy.png">Puppy</option>
+			<option value="Kitty.png">Kitty</option>
+		</select>
+		<img id="p1sample" src="">
+	</div>
+	<div id="gameboard">
+		<table id="game">
+			<tr>
+				<td class="top" width="100px" height="100px"></td>
+				<td class="top" width="100px" height="100px"></td>
+				<td id="topright" width="100px" height="100px"></td>
+			</tr>
+			<tr>
+				<td width="100px" height="100px"></td>
+				<td width="100px" height="100px"></td>
+				<td class="right" width="100px" height="100px"></td>
+			</tr>
+			<tr>
+				<td width="100px" height="100px"></td>
+				<td width="100px" height="100px"></td>
+				<td class="right" width="100px" height="100px"></td>
+			</tr>
+		</table>
+		<h1 id="win">Choose your pictures.</h1>
+		<button id="reset">Play</button> <button id="resetScore">Reset Scores</button>
+	</div>
+	<div id="p2">
+		<div id="player2score">
+			<span id='p2namedisplay'>Player 2</span>
+			<br>
+			<input type='text' id='p2name'><button id="p2namebutton">Change name</button>
+			<p id="score2">0</p>
+		</div>
+		<select id="select2">
+			<option value="Xs.png">X</option>
+			<option value="Os.png" selected="selected">O</option>
+			<option value="Puppy.png">Puppy</option>
+			<option value="Kitty.png">Kitty</option>
+		</select>
+		<img id="p2sample" src="">
+	</div>
+</div>
+<script type="text/javascript" src="TicTacToeRefactored.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+	margin: auto;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}
+img {
+	display: block;
+	margin: 0 auto;
+}
+select {
+	text-align: center;
+}
+select:disabled {
+	color: darkred;
+	border-color: darkred;
+}
+#title {
+	font-size: 3em;
+}
+#switch {
+	background: #81c037;
+}
+#switch:hover {
+	background: #2588e8;
+}
+td {
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+}
+#header {
+	background-color: #a1e067;
+	text-align: center;
+	height: 100px;
+	margin-bottom: 10px;
+}
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+	#container {
+		width: 80%;
+	}
+}
+@media screen and (min-width: 1270px) {
+	#container {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 770px) {
+	#gameboard{
+		position: absolute;
+		top: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+	#player1score {
+		float: left;
+	}
+	#player2score {
+		float: right;
+	}
+	#p1 {
+		min-width: 35%;
+		padding: 0 5% 0 10%;
+	}
+	#p2 {
+		min-width: 35%;
+		padding: 0 10% 0 5%;
+	}
+}
+#gameboard {
+	width: 40%;
+	min-width: 300px;
+	float: left;
+}
+#p1 {
+	float: left;
+	width: 30%;
+	font-size: 2em;
+}
+#p2 {
+	float: left;
+	width: 30%;
+	font-size: 2em;
+}
+button {
+	outline: none;
+	background: #f0f0f0;
+	border: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.1s linear;
+}
+button:hover {
+	background: #2588e8;
+	color: white;
+}
+#game td {
+	transition: 0.1s linear;
+}
+#game td:hover:not(.end) {
+	background-color: #f5f5f5;
+}
+.top {
+	border-bottom: 1px solid black;
+	border-top: 0;
+}
+.bottom {
+	border-top: 1px solid black;
+}
+.left {
+	border-right: 1px solid black;
+}
+.right {
+	border-left: 1px solid black;
+}
+.top {
+	border-top: none;
+}
+.right {
+	border-right: none;
+}
+
+#topright {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+h1 {
+	text-align: center;
+	margin: auto;
+	height: 40px;
+}
+select {
+	margin: auto;
+}
+.end{
+	background: white;
+}
+.Os {
+	background-image: url("Os.png");
+}
+.Xs {
+	background-image: url("Xs.png");
+}
+.Puppy{
+	background-image: url("Puppy.png");
+}
+.Kitty{
+	background-image: url("Kitty.png");
+}
